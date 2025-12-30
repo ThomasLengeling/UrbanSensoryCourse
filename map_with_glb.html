@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_261b02c38d725f843a20ff22648e0844 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_261b02c38d725f843a20ff22648e0844" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_261b02c38d725f843a20ff22648e0844 = L.map(
+                "map_261b02c38d725f843a20ff22648e0844",
+                {
+                    center: [31.2304, 121.4737],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1a37511d5e58cdfee8270469fe8b5b16 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1a37511d5e58cdfee8270469fe8b5b16.addTo(map_261b02c38d725f843a20ff22648e0844);
+        
+    
+            var marker_d23a579b4cfc9a909a2a2f17e1cf2b94 = L.marker(
+                [31.2304, 121.4737],
+                {
+}
+            ).addTo(map_261b02c38d725f843a20ff22648e0844);
+        
+    
+        var popup_fd465433db02fe3d1d516a377b00e7a0 = L.popup({
+  "maxWidth": 440,
+});
+
+        
+            
+                var i_frame_25adf9ecefb8274e65a58cc84e63a7e2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPHNjcmlwdCB0eXBlPSJtb2R1bGUiIHNyYz0iaHR0cHM6Ly91bnBrZy5jb20vQGdvb2dsZS9tb2RlbC12aWV3ZXIvZGlzdC9tb2RlbC12aWV3ZXIubWluLmpzIj48L3NjcmlwdD4KPHN0eWxlPmJvZHl7bWFyZ2luOjA7cGFkZGluZzowO2JhY2tncm91bmQ6dHJhbnNwYXJlbnR9IG1vZGVsLXZpZXdlcntiYWNrZ3JvdW5kOnRyYW5zcGFyZW50fTwvc3R5bGU+Cjxtb2RlbC12aWV3ZXIgc3JjPSIuL0NoaWZlbmdfUmQuZ2xiIiBhbHQ9Ik15IEdMQiBNb2RlbCIgYXV0by1yb3RhdGUgY2FtZXJhLWNvbnRyb2xzIHN0eWxlPSJ3aWR0aDoxMDAlOyBoZWlnaHQ6MTAwJTsiPjwvbW9kZWwtdmlld2VyPg==" width="420" style="border:none !important;" height="360"></iframe>`)[0];
+                popup_fd465433db02fe3d1d516a377b00e7a0.setContent(i_frame_25adf9ecefb8274e65a58cc84e63a7e2);
+            
+        
+
+        marker_d23a579b4cfc9a909a2a2f17e1cf2b94.bindPopup(popup_fd465433db02fe3d1d516a377b00e7a0)
+        ;
+
+        
+    
+    
+            marker_d23a579b4cfc9a909a2a2f17e1cf2b94.bindTooltip(
+                `<div>
+                     My GLB Model
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
